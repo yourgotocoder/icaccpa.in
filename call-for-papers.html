@@ -1,274 +1,558 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>ICACCP-2025</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <title>ICACCP-2027</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet" />
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Header Section -->
-    <header id="header" class="d-flex align-items-center">
-      <div class="container-fluid container-xxl d-flex align-items-center">
-        <div id="logo" class="me-auto">
-          <a href="index.html" class="scrollto"
-            ><img src="assets/img/logo-2.png" alt="" title=""
-          /></a>
-        </div>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
-          <ul>
-            <li>
-              <a class="nav-link scrollto" href="./index.html#hero">Home</a>
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="./index.html#about">About</a>
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="./index.html#speakers"
-                >Speakers</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="./index.html#schedule"
-                >Schedule</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="#call-for-paper"
-                >Call For Papers</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="./registration.html"
-                >Registration</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="./committee.html">Committee</a>
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="./index.html#contact"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <a
-          class="registrations scrollto"
-          href="https://cmt3.research.microsoft.com/ICACCP2025/Submission/Index"
-          >Submit Paper</a
-        >
-      </div>
-    </header>
-    <!-- Header Section -->
+  <style>
+    #call-for-paper .table-responsive {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
 
-    <main id="main" class="main-page">
-      <!-- Speaker Detail's Section -->
-      <section id="call-for-paper" style="padding-top: 60px">
-        <div class="container">
-          <div class="section-header">
-            <h2>Call For Papers</h2>
-          </div>
+    #call-for-paper .table {
+      width: 100%;
+      margin: 0 auto;
+      background: #ffffff;
+      border-color: #dee2e6;
+    }
 
-          <div class="row">
-            <div class="details">
-              <p style="text-align: justify">
-                The 5th International Conference on Advanced Computational and
-                Communication Paradigms (ICACCP-2025) will be hosted by the
-                Sikkim Manipal Institute of Technology (SMIT), Sikkim, India,
-                from June 6 to 8, 2025. Since its inception in 2017, ICACCP has
-                been held biannually, attracting researchers, academicians, and
-                industry professionals from around the globe.
-              </p>
+    #call-for-paper .table thead th {
+      background-color: #f5f7fa;
+      color: #273b5b;
+      font-weight: 700;
+      vertical-align: middle;
+      text-align: center;
+      padding: 14px 12px;
+    }
 
-              <p style="text-align: justify">
-                ICACCP-2025 invites submissions of original, high-quality
-                research papers that contribute to the fields of advanced
-                computational and communication paradigms. Topics of interest
-                include, but are not limited to: Generative AI, Explainable AI,
-                Federated Learning, 5G and Beyond, AI Applications in EVs,
-                Bioinformatics, Blockchain and Cybersecurity, Robotics,
-                Augmented Reality, Cyber-Physical Systems, Digital Twins,
-                Energy-Efficient Computing, the Internet of Things (IoT), and
-                related areas.
-              </p>
+    #call-for-paper .table tbody td {
+      padding: 14px 12px;
+      vertical-align: middle;
+      line-height: 1.6;
+    }
 
-              <p style="text-align: justify">
-                All submissions will undergo a rigorous review process conducted
-                by domain experts, who will evaluate the papers based on
-                significance, originality, and research quality. Accepted,
-                registered, and presented papers will be considered for
-                publication by Springer. Authors are encouraged to submit
-                full-length papers (10–12 pages) using the
-                <a
-                  href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734"
-                  target="_blank"
-                  >Springer conference template</a
-                >.
-              </p>
+    #call-for-paper .table ul {
+      display: inline-block;
+      text-align: left;
+      margin: 0 auto;
+      padding-left: 20px;
+    }
 
-              <p style="text-align: justify">
-                To submit your paper, please
-                <a
-                  href="https://cmt3.research.microsoft.com/ICACCP2025/Submission/Index"
-                  target="_blank"
-                  >click here</a
-                >. We look forward to receiving your submissions and welcoming
-                you to ICACCP-2025. For more details about submission guidelines
-                and important dates, please visit the conference website. For
-                paper submission, please
-              </p>
-              <p style="text-align: center">
-                <img
-                  src="assets/img/ICACCP25_QR_submission.png"
-                  alt="QR Code for Paper Submission"
-                  style="width: 200px; height: 200px"
-                />
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    #call-for-paper .table li {
+      margin-bottom: 4px;
+    }
 
-      <!-- Speaker Detail's Section -->
-    </main>
+    #call-for-paper .mb-4 {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 footer-info">
-              <img src="assets/img/logo-2.png" />
-              <p style="font-size: 13px; line-height: 1.3; text-align: justify">
-                The Department of Computer Science and Engineering offers five
-                programs: Bachelor of Technology (<span style="color: #4eafda"
-                  >B.Tech</span
-                >.) in CSE, Bachelor of Technology (<span style="color: #4eafda"
-                  >B.Tech</span
-                >.) in CSE (AI & ML), Bachelor of Technology (<span
-                  style="color: #4eafda"
-                  >B.Tech</span
-                >.) in CSE (IoT & Cybersecurity including Blockchain
-                Technology), Master of Technology (<span style="color: #4eafda"
-                  >M.Tech</span
-                >.) in CSE, and <span style="color: #4eafda">Ph.D</span>. The
-                department has an AICTE-approved intake of 300 students for the
-                B.Tech. program and 18 students for the M.Tech. program. With
-                these programs, the Department of Computer Science and
-                Engineering serves over 1000 students.
-              </p>
-            </div>
+    #call-for-paper .mt-4>h3 {
+      text-align: center;
+    }
 
-            <div class="col-lg-4 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="./index.html#hero">Home</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="./index.html#about">About us</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="./index.html#schedule">Schedule</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="./index.html#venue">Venue</a>
-                </li>
-              </ul>
-            </div>
+    @media (max-width: 992px) {
+      #call-for-paper .table-responsive {
+        max-width: 95%;
+      }
+    }
 
-            <div class="col-lg-4 col-md-6 footer-contact">
-              <h4>Contact Us</h4>
-              <p>
-                Sikkim Manipal Institute of Technology <br />
-                Majhitar, Sikkim 737136<br />
-                India <br />
-                <strong>Email: </strong>icaccp.cse@smit.smu.edu.in<br />
-              </p>
+    @media (max-width: 768px) {
+      #call-for-paper .table-responsive {
+        max-width: 100%;
+      }
 
-              <div class="social-links">
-                <a
-                  href="https://www.linkedin.com/company/sikkim-manipal-institute-of-technology-smit/mycompany/"
-                  class="linkedin"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
+      #call-for-paper .table {
+        font-size: 13px !important;
+      }
+
+      #call-for-paper .table tbody td {
+        padding: 10px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <a href="index.html" class="scrollto"><img src="assets/img/logo-2.png" alt="" title="" /></a>
       </div>
 
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li>
+            <a class="nav-link scrollto" href="./index.html#hero">Home</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="./index.html#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="./index.html#speakers">Speakers</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="./index.html#schedule">Schedule</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="#call-for-paper">Call For Papers</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="./registration.html">Registration</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="./committee.html">Committee</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="./index.html#contact">Contact Us</a>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <a class="registrations scrollto"
+				href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICACCP2027%2FSubmission%2FIndex">Submit Paper</a>
+    </div>
+  </header>
+  <!-- Header Section -->
+
+  <main id="main" class="main-page">
+    <!-- Speaker Detail's Section -->
+    <section id="call-for-paper" style="padding-top: 60px">
       <div class="container">
-        <div class="copyright">
-          &copy; Copyright
-          <strong>Computer Science and Engineering, SMIT</strong>. All Rights
-          Reserved
+        <div class="section-header">
+          <h2>Call For Papers</h2>
         </div>
-        <div class="credits">
-          Designed by
-          <a
-            href="https://www.linkedin.com/in/dr-basab-nath-b956a3194"
-            target="_blank"
-            >Dr. Basab Nath</a
-          >
+
+        <div class="row">
+          <div class="details">
+            <p style="text-align: justify">
+              The 6th International Conference on Advanced Computational and Communication Paradigms (ICACCP-2027) will
+              be hosted by the Sikkim Manipal Institute of Technology (SMIT), Sikkim, India, from April 8th to April
+              10th, 2027. Since its inception in 2017, ICACCP has been held biannually, attracting researchers,
+              academicians and industry professionals from around the globe.
+            </p>
+
+            <p style="text-align: justify">
+              ICACCP-2027 invites submissions of original, high-quality research papers that contribute to the fields of
+              advanced computational and communication paradigms. Topics of interest include, but are not limited to:
+              Artificial Intelligence and Machine Learning, Data Science and Smart Analytics, Computer Vision and Signal
+              Processing, Communication Systems and IoT, Cybersecurity and Blockchain, Robotics and Embedded
+              Technologies and applications of Nonlinear Dynamics in Computer Science and Engineering.
+            </p>
+
+            <p style="text-align: justify">
+              All submissions will undergo a rigorous review process conducted
+              by domain experts, who will evaluate the papers based on
+              significance, originality, and research quality. Accepted,
+              registered, and presented papers will be considered for
+              publication by Springer. Authors are encouraged to submit
+              full-length papers (10–12 pages) using the
+              <a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734"
+                target="_blank">Springer conference template</a>.
+            </p>
+
+            <p style="text-align: justify">
+              To submit your paper, please
+              <a href="https://cmt3.research.microsoft.com/ICACCP2027/Submission/Index" target="_blank">Click here</a>.
+              We look forward to receiving your submissions and welcoming
+              you to ICACCP-2027.
+            </p>
+            <!--<p style="text-align: center">
+              <img src="assets/img/ICACCP25_QR_submission.png" alt="QR Code for Paper Submission"
+                style="width: 200px; height: 200px" />
+            </p>-->
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer -->
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+      <!-- Conference Tracks Section -->
+      <div class="mt-4">
+        <h3 style="font-weight: 700; margin-bottom: 20px">
+          Conference Tracks
+        </h3>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+        <div class="table-responsive mb-4" style="max-width: 900px; margin: 0 auto;">
+          <table class="table table-bordered" style="font-size: 15px;">
+            <thead class="table-light">
+              <tr>
+                <th style="width: 15%; text-align: center;">Track</th>
+                <th style="text-align: left;">Track Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: center;"><strong>Track 1</strong></td>
+                <td style="text-align: left;">Artificial Intelligence, Machine Learning &amp; Soft Computing</td>
+              </tr>
+              <tr>
+                <td style="text-align: center;"><strong>Track 2</strong></td>
+                <td style="text-align: left;">Data Science, Big Data &amp; Smart Analytics</td>
+              </tr>
+              <tr>
+                <td style="text-align: center;"><strong>Track 3</strong></td>
+                <td style="text-align: left;">Computer Vision, Image &amp; Signal Processing</td>
+              </tr>
+              <tr>
+                <td style="text-align: center;"><strong>Track 4</strong></td>
+                <td style="text-align: left;">Communication Systems, IoT &amp; Networks</td>
+              </tr>
+              <tr>
+                <td style="text-align: center;"><strong>Track 5</strong></td>
+                <td style="text-align: left;">Cybersecurity, Blockchain &amp; High-Performance Computing</td>
+              </tr>
+              <tr>
+                <td style="text-align: center;"><strong>Track 6</strong></td>
+                <td style="text-align: left;">Robotics, Control Systems &amp; Embedded Technologies</td>
+              </tr>
+              <tr>
+                <td style="text-align: center;"><strong>Track 7</strong></td>
+                <td style="text-align: left;">Application of Nonlinear Dynamics in Computer Science and Engineering</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
+        <div class="table-responsive">
+          <table class="table table-bordered" style="font-size: 15px">
+            <thead class="table-light">
+              <tr>
+                <th style="width: 10%; text-align: center">Track</th>
+                <th style="width: 28%">Conference Track</th>
+                <th style="width: 62%">Suggested Topics</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- Track 1 -->
+              <tr>
+                <td style="font-weight: 600">Track 1</td>
+                <td style="font-weight: 600">
+                  Artificial Intelligence, Machine Learning &amp; Soft Computing
+                </td>
+                <td>
+                  <ul style="margin-bottom: 0; padding-left: 20px">
+                    <li>Artificial Intelligence and Intelligent Systems</li>
+                    <li>Machine Learning and Deep Learning</li>
+                    <li>Generative AI and Large Language Models (LLMs)</li>
+                    <li>Explainable and Trustworthy AI</li>
+                    <li>Reinforcement Learning</li>
+                    <li>Federated and Distributed Learning</li>
+                    <li>Transfer Learning and Meta-Learning</li>
+                    <li>Evolutionary Computation and Genetic Algorithms</li>
+                    <li>Fuzzy Logic and Neuro-Fuzzy Systems</li>
+                    <li>Swarm Intelligence and Bio-Inspired Computing</li>
+                    <li>AI Optimization and Decision Support Systems</li>
+                    <li>AI for Science, Engineering and Healthcare</li>
+                    <li>Multimodal AI and Foundation Models</li>
+                    <li>Responsible, Ethical and Sustainable AI</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- Track 2 -->
+              <tr>
+                <td style="font-weight: 600">Track 2</td>
+                <td style="font-weight: 600">
+                  Data Science, Big Data &amp; Smart Analytics
+                </td>
+                <td>
+                  <ul style="margin-bottom: 0; padding-left: 20px">
+                    <li>Data Science and Data Mining</li>
+                    <li>Big Data Analytics and Management</li>
+                    <li>Statistical Learning and Predictive Analytics</li>
+                    <li>Business and Intelligent Analytics</li>
+                    <li>Data Visualization and Visual Analytics</li>
+                    <li>Knowledge Discovery and Pattern Mining</li>
+                    <li>Time-Series and Spatiotemporal Analytics</li>
+                    <li>Stream and Real-Time Data Processing</li>
+                    <li>Cloud, Edge and Distributed Data Analytics</li>
+                    <li>Recommender Systems</li>
+                    <li>Social Network and Web Analytics</li>
+                    <li>Graph Data Analytics and Graph Neural Networks</li>
+                    <li>Data Quality, Integration and Governance</li>
+                    <li>Privacy-Preserving Data Analytics</li>
+                    <li>Smart City and IoT Data Analytics</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- Track 3 -->
+              <tr>
+                <td style="font-weight: 600">Track 3</td>
+                <td style="font-weight: 600">
+                  Computer Vision, Image &amp; Signal Processing
+                </td>
+                <td>
+                  <ul style="margin-bottom: 0; padding-left: 20px">
+                    <li>Image Processing and Analysis</li>
+                    <li>Computer Vision and Pattern Recognition</li>
+                    <li>Object Detection, Recognition and Tracking</li>
+                    <li>Image Segmentation and Classification</li>
+                    <li>Medical Image Processing and Analysis</li>
+                    <li>Remote Sensing and Satellite Image Processing</li>
+                    <li>Hyperspectral and Multispectral Image Analysis</li>
+                    <li>Video Processing and Understanding</li>
+                    <li>3D Vision, Depth Estimation and Reconstruction</li>
+                    <li>Vision Transformers and Deep Vision Models</li>
+                    <li>Image and Video Compression</li>
+                    <li>Image Restoration, Denoising and Super-Resolution</li>
+                    <li>Speech, Audio and Acoustic Signal Processing</li>
+                    <li>Biomedical Signal Processing</li>
+                    <li>Sensor and Multimodal Signal Processing</li>
+                    <li>Signal Detection, Estimation and Classification</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- Track 4 -->
+              <tr>
+                <td style="font-weight: 600">Track 4</td>
+                <td style="font-weight: 600">
+                  Communication Systems, IoT &amp; Networks
+                </td>
+                <td>
+                  <ul style="margin-bottom: 0; padding-left: 20px">
+                    <li>5G/6G Wireless Communication</li>
+                    <li>Massive MIMO, XL-MIMO and Cell-Free MIMO</li>
+                    <li>Reconfigurable Intelligent Surfaces (RIS/IRS)</li>
+                    <li>Near-Field and Extremely Large-Scale Wireless Systems</li>
+                    <li>Terahertz and Millimeter-Wave Communications</li>
+                    <li>Optical and Visible Light Communications</li>
+                    <li>Integrated Sensing and Communication (ISAC)</li>
+                    <li>Wireless AI and AI-Native Networks</li>
+                    <li>Internet of Things (IoT) and Industrial IoT</li>
+                    <li>Internet of Everything (IoE)</li>
+                    <li>Wireless Sensor Networks</li>
+                    <li>Vehicular Networks and V2X Communications</li>
+                    <li>UAV and Aerial Communication Networks</li>
+                    <li>Edge, Fog and Cloud Computing</li>
+                    <li>Network Slicing and Software-Defined Networking</li>
+                    <li>Non-Terrestrial Networks (NTN) and Satellite Communications</li>
+                    <li>Semantic and Goal-Oriented Communications</li>
+                    <li>Green and Energy-Efficient Communications</li>
+                    <li>Wireless Security and Physical-Layer Security</li>
+                    <li>Antenna Optimization</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- Track 5 -->
+              <tr>
+                <td style=" font-weight: 600">Track 5</td>
+                <td style="font-weight: 600">
+                  Cybersecurity, Blockchain &amp; High-Performance Computing
+                </td>
+                <td>
+                  <ul style="margin-bottom: 0; padding-left: 20px">
+                    <li>Network and Information Security</li>
+                    <li>Cyber Threat Intelligence</li>
+                    <li>Intrusion Detection and Prevention</li>
+                    <li>AI/ML for Cybersecurity</li>
+                    <li>Malware and Ransomware Detection</li>
+                    <li>Privacy and Data Protection</li>
+                    <li>Cryptography and Post-Quantum Cryptography</li>
+                    <li>Blockchain and Distributed Ledger Technologies</li>
+                    <li>Smart Contracts and Decentralized Applications</li>
+                    <li>Blockchain for IoT and Supply Chains</li>
+                    <li>Secure Cloud and Edge Computing</li>
+                    <li>Zero-Trust Architecture</li>
+                    <li>Digital Forensics and Cybercrime Investigation</li>
+                    <li>Hardware and Embedded Security</li>
+                    <li>Adversarial Machine Learning and AI Security</li>
+                    <li>High-Performance Computing (HPC)</li>
+                    <li>Parallel and Distributed Computing</li>
+                    <li>GPU and Accelerator Computing</li>
+                    <li>Quantum Computing and Quantum Algorithms</li>
+                    <li>Cloud-HPC and Edge-HPC Architectures</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- Track 6 -->
+              <tr>
+                <td style=" font-weight: 600">Track 6</td>
+                <td style="font-weight: 600">
+                  Robotics, Control Systems &amp; Embedded Technologies
+                </td>
+                <td>
+                  <ul style="margin-bottom: 0; padding-left: 20px">
+                    <li>Robotics and Autonomous Systems</li>
+                    <li>Mobile, Industrial and Collaborative Robots</li>
+                    <li>Swarm Robotics and Multi-Agent Systems</li>
+                    <li>Human-Robot Interaction</li>
+                    <li>Robot Perception, Localization and Mapping</li>
+                    <li>Simultaneous Localization and Mapping (SLAM)</li>
+                    <li>Path Planning and Navigation</li>
+                    <li>Robot Vision and Intelligent Manipulation</li>
+                    <li>Autonomous Vehicles and Intelligent Transportation</li>
+                    <li>UAVs, Drones and Aerial Robotics</li>
+                    <li>Control Theory and Applications</li>
+                    <li>Adaptive, Robust and Nonlinear Control</li>
+                    <li>Model Predictive Control</li>
+                    <li>Optimal and Intelligent Control</li>
+                    <li>Networked and Distributed Control Systems</li>
+                    <li>Embedded Systems and Real-Time Computing</li>
+                    <li>FPGA, SoC and Hardware Accelerators</li>
+                    <li>Edge AI and TinyML</li>
+                    <li>Cyber-Physical Systems (CPS)</li>
+                    <li>Digital Twins and Industrial Automation</li>
+                    <li>Industry 4.0 and Smart Manufacturing</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- Track 7 -->
+              <tr>
+                <td style=" font-weight: 600">Track 7</td>
+                <td style="font-weight: 600">
+                  Application of Nonlinear Dynamics in Computer Science and Engineering
+                </td>
+                <td>
+                  <ul style="margin-bottom: 0; padding-left: 20px">
+                    <li>Nonlinear Dynamical Systems in Computational Modelling</li>
+                    <li>Chaos Theory and Its Applications in Computer Science</li>
+                    <li>Machine Learning and Deep Learning for Nonlinear Systems</li>
+                    <li>Artificial Intelligence for Nonlinear Dynamics</li>
+                    <li>Data-Driven Modeling and Prediction of Nonlinear Systems</li>
+                    <li>Time-Series Analysis and Nonlinear Signal Processing</li>
+                    <li>Cyber-Physical Systems and Nonlinear Control</li>
+                    <li>Cryptography and Information Security Based on Chaos</li>
+                    <li>Internet of Things (IoT) and Smart Systems with Nonlinear Dynamics</li>
+                    <li>Cloud, Edge and Distributed Computing Dynamics</li>
+                    <li>High-Performance Computing for Nonlinear Simulations</li>
+                    <li>
+                      Applications of Nonlinear Dynamics in Smart Cities, Healthcare,
+                      Finance and Cybersecurity
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End Conference Tracks Section -->
+
+    </section>
+
+    <!-- Speaker Detail's Section -->
+  </main>
+
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="assets/img/logo-2.png" />
+            <p style="font-size: 13px; line-height: 1.3; text-align: justify">
+              The Department of Computer Science and Engineering offers five
+              programs: Bachelor of Technology (<span style="color: #4eafda">B.Tech</span>.) in CSE, Bachelor of
+              Technology (<span style="color: #4eafda">B.Tech</span>.) in CSE (AI & ML), Bachelor of Technology (<span
+                style="color: #4eafda">B.Tech</span>.) in CSE (IoT & Cybersecurity including Blockchain
+              Technology), Master of Technology (<span style="color: #4eafda">M.Tech</span>.) in CSE, and <span
+                style="color: #4eafda">Ph.D</span>. The
+              department has an AICTE-approved intake of 300 students for the
+              B.Tech. program and 18 students for the M.Tech. program. With
+              these programs, the Department of Computer Science and
+              Engineering serves over 1000 students.
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./index.html#hero">Home</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./index.html#about">About us</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./index.html#schedule">Schedule</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./index.html#venue">Venue</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Sikkim Manipal Institute of Technology <br />
+              Majhitar, Sikkim 737136<br />
+              India <br />
+              <strong>Email: </strong>icaccp.cse@smit.smu.edu.in<br />
+            </p>
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/company/sikkim-manipal-institute-of-technology-smit/mycompany/"
+                class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright
+        <strong>Computer Science and Engineering, SMIT</strong>. All Rights
+        Reserved
+      </div>
+      <div class="copyright">
+        Designed by Team ICACCP-2027
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
